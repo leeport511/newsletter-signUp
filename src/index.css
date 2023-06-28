@@ -5,6 +5,12 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../assets/font/Roboto-Regular.ttf) format("ttf"),
-        url(../assets/font/Roboto-Bold.ttf) format("ttf");
+    src: url(../assets/font/Roboto-Regular.ttf) format("ttf");
+    font-weight: normal;
+
+    
+    font-family: "Roboto";
+    src: url(../assets/font/Roboto-Bold.ttf) format("ttf");
+    font-weight: bold;
+         
 }
