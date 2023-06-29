@@ -6,6 +6,7 @@ export default {
             colors: {
                 // Primary
                 "tomato": "hsl(4, 100%, 67%)",
+                'tomato-transparent': "#ff666625",
 
                 // Neutral
                 "dark-slate-grey": "hsl(234, 29%, 20%)",
