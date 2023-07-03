@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/button";
 
-const Success = ({ isValid }) => {
+const Success = () => {
     return (
         <section className="m-auto flex h-screen w-[375px] flex-col justify-between px-5 py-10 font-Roboto xl:h-auto xl:w-[390px] xl:rounded-3xl xl:bg-white xl:p-10">
             <div className="mt-32 xl:mt-0">
@@ -22,7 +22,7 @@ const Success = ({ isValid }) => {
                 </div>
             </div>
             <div className="xl:mt-8">
-                <Button isValid={isValid}>Dismiss message</Button>
+                <Button>Dismiss message</Button>
             </div>
         </section>
     );
