@@ -1,12 +1,9 @@
 import { useState } from "react";
-import Main from "./pages/main";
-import Success from "./pages/success";
-
-
+import Main from "./components/Main";
+import Success from "./components/Success";
 
 
 function App() {
-
     const [email, setEmail] = useState("");
     const [isValid, setIsValid] = useState(null);
 
@@ -19,7 +16,11 @@ function App() {
 
         const emailValue = email;
 
-        if (emailValue === "" || !emailValue.includes("@") || !emailValue.includes(".com")) {
+        if (
+            emailValue === "" ||
+            !emailValue.includes("@") ||
+            !emailValue.includes(".com")
+        ) {
             setIsValid(false);
             console.log("Please enter a valid email");
             return;
@@ -28,17 +29,18 @@ function App() {
         setIsValid(true);
     };
 
-
-
-
     return (
-        <div className="flex h-screen flex-col justify-center xl:items-center mx-auto xl:bg-charcoal-grey">
-            {
-                !isValid ?
-                <Main email={email} handleInputChange={handleInputChange} handleSubmit={handleSubmit} isValid={isValid}/>
-                : <Success isValid={isValid}/> 
-            }
-            
+        <div className="mx-auto flex h-screen flex-col justify-center xl:items-center xl:bg-charcoal-grey">
+            {!isValid ? (
+                <Main
+                    email={email}
+                    handleInputChange={handleInputChange}
+                    handleSubmit={handleSubmit}
+                    isValid={isValid}
+                />
+            ) : (
+                <Success isValid={isValid} />
+            )}
         </div>
     );
 }

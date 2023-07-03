@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import Button from "../components/button";
+import React from "react";
+import Button from "./button";
 
-const Main = ({email, isValid, handleInputChange, handleSubmit}) => {
-   
-
+const Main = ({ email, isValid, handleInputChange, handleSubmit }) => {
     return (
         <>
             <section className="flex flex-col items-center rounded-2xl bg-white font-Roboto xl:w-[880px] xl:flex-row-reverse xl:items-start xl:justify-center xl:p-4">
@@ -56,7 +54,7 @@ const Main = ({email, isValid, handleInputChange, handleSubmit}) => {
                             className="relative mb-2 text-xs font-bold tracking-tighter text-dark-slate-grey"
                         >
                             Email address
-                            {(isValid === false) ? (
+                            {isValid === false ? (
                                 <p className="absolute right-0 top-0 text-tomato">
                                     Valid email required
                                 </p>
@@ -72,7 +70,7 @@ const Main = ({email, isValid, handleInputChange, handleSubmit}) => {
                             placeholder="email@company.com"
                             autoComplete="off"
                             className={`mb-6 rounded-lg border border-gray-300 px-6 py-3 focus:outline ${
-                                (isValid === false)
+                                isValid === false
                                     ? "bg-tomato-transparent outline-tomato"
                                     : null
                             }`}
