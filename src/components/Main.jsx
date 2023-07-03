@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button";
+import SiteButton from "./SiteButton";
 
 const Main = ({ email, isValid, handleInputChange, handleSubmit }) => {
     return (
@@ -75,9 +75,9 @@ const Main = ({ email, isValid, handleInputChange, handleSubmit }) => {
                                     : null
                             }`}
                         />
-                        <Button handleSubmit={handleSubmit}>
+                        <SiteButton handleSubmit={handleSubmit}>
                             Subscribe to monthly newsletter
-                        </Button>
+                        </SiteButton>
                     </form>
                     <div className="mt-7 flex items-end justify-center bg-white text-center font-Roboto text-[11px]">
                         Challenge by{" "}

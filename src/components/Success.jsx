@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/button";
+import SiteButton from "./SiteButton";
 
 const Success = () => {
     return (
@@ -22,7 +22,7 @@ const Success = () => {
                 </div>
             </div>
             <div className="xl:mt-8">
-                <Button>Dismiss message</Button>
+                <SiteButton>Dismiss message</SiteButton>
             </div>
         </section>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ children, handleSubmit }) => {
+const SiteButton = ({ children, handleSubmit }) => {
     return (
         <>
             <button
@@ -13,5 +13,5 @@ const Button = ({ children, handleSubmit }) => {
         </>
     );
 };
-git
-export default Button;
+
+export default SiteButton;
